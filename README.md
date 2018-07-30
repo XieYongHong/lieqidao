@@ -1,11 +1,11 @@
 # lieqidao
 
 > 这是猎奇岛前端项目页面的基本信息以及目录结构（这是写给我那萌蠢萌蠢的女友，反正她也看不到 ╮(╯▽╰)╭）
-> 快来访问[猎奇岛](http://www.lieqidao.club)
+[猎奇岛](http://www.lieqidao.club)
 
 ## 技术栈
 
-* vue2 + vuex + vue-router + axios + webpack + es6 + sass
+vue2 + vuex + vue-router + axios + webpack + es6 + sass
 
 ## 页面框架
 
@@ -17,6 +17,8 @@ element-ui
 打包 cnpm build
 
 ## 目录结构
+```
+.
 ├── build               // webpack配置文件
 ├── config              // 项目打包路径
 ├── src                 // 源码路径
@@ -39,3 +41,4 @@ element-ui
 ├── static
 ├── idnex.html          // 入口html文件
 .
+```
