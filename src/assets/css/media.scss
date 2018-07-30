@@ -1,0 +1,26 @@
+// 媒体查询
+@mixin getMediaAttr($data,$attr){
+    @each $m , $a in $data{
+        @if $m == null{
+            #{$attr}:$a
+        }
+        @else {
+            @media screen and (min-width: $m){
+                #{$attr}:$a
+            }
+        }
+    }
+};
+
+@mixin getMediaAttr2($data,$attr){
+    @each $m , $a in $data{
+        @if $m == null{
+            #{$attr}:calc(100% - #{ $a });
+        }
+        @else {
+            @media screen and (min-width: $m){
+                #{$attr}:calc(100% - #{ $a });
+            }
+        }
+    }
+};
