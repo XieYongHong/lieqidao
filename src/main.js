@@ -6,6 +6,7 @@ import router from './router'
 import store from './store';
 import element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import './assets/lib/font-awesome-4.7.0/css/font-awesome.min.css'
 
 Vue.config.productionTip = false
 

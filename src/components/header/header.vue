@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style lang='scss'>
+@import '../../assets/css/media.scss';
+$height:();
+
     #header{
         height: 60px;
         width: 100%;
@@ -77,7 +80,7 @@ export default {
         .tool{
             float: right;
             margin-right: 4%;
-            line-height: 40px;
+            line-height: 33px;
             color:#777;
             >span{
                 display: inline-block;

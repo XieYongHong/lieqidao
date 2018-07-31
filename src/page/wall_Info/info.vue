@@ -1,30 +1,76 @@
 <template>
-    <a>
+    <a class="wall-list-info">
         <div class="pic">
-            <img src="">
+            <img :src="imgUrl">
         </div>
-        <p class="">
+        <p class="name">
+            「{{name}}」
+        </p>
+        <p class="content">
             {{text}}
         </p>
-        <p>
-            <span>
-                <i></i>
-                {{eyeNumber}}
-            </span>
-            <span>
-                <i></i>
-                {{houseNumber}}
-            </span>
+        <p class="number">
+                <span class="eye-number">
+                    <i class="fa fa-eye"></i>
+                    {{eyeNumber}}
+                </span>
+                <span class="house-number">
+                    <i class="fa fa-heart"></i>
+                    {{houseNumber}}
+                </span>
         </p>
     </a>
 </template>
 
 <script>
 export default {
-    props:['text','eyeNumber','houseNumber']
+    props:['text','name','eyeNumber','houseNumber','imgUrl']
 }
 </script>
 
-<style>
+<style lang='scss'>
 
+.wall-list-info{
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+    position: relative;
+    .pic{
+        width: 100%;
+        height: 100px;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .name{
+        font-size: 13px;
+        color: #333333;
+    }
+    .number{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .content{
+        font-size: 11px;
+        color: #666;
+        text-align: left;
+    }
+    .eye-number,.house-number{
+        width: 45%;
+        display: inline-block;
+        text-align: left;
+        font-size: 11px;
+        color: #444;
+        >i{
+            margin-right: 2px;
+        }
+    }
+    
+    p{
+        margin: 5px 0;
+    }
+}
 </style>
