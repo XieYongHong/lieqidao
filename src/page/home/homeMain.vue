@@ -75,12 +75,9 @@ export default {
                     {id:10004,text:'测试内容,测试内容,测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
                     {id:10005,text:'测试内容,测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
                     {id:10006,text:'测试内容,测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
-                    {id:10007,text:'测试内容,测试内容测试内容测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
-                    {id:10008,text:'测试内容测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
-                    {id:10009,text:'测试内容测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'},
-                    {id:10018,text:'测试内容测试内容测试内容',eyeNumber:10,houseNumber:6,imgUrl:require('../../assets/image/login1.jpg'),name:'测试名称'}],
+                    ],
             name:{
-                hotWall:'最热墙',
+                hotWall:'TOP榜',
                 newWall:'萌新墙',
                 queryWall:'热搜墙'
             },
@@ -131,8 +128,10 @@ $bar_width:(
             position: absolute;
             bottom: 30px;
             font-size: 16px;
-            left: 50%;
-            margin-left: -55px;
+            left: 0;
+            right: 0;
+            width: 109px;
+            margin: 0 auto;
             z-index:3;
             cursor: pointer;
             >i{
@@ -150,8 +149,9 @@ $bar_width:(
             margin-top: 55px;
             flex-wrap: wrap;
             justify-content:center;
+            position: relative;
             >div{
-                margin: 15px 50px;
+                margin: 15px 2%;
             }
         }
     }
