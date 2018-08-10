@@ -7,17 +7,17 @@ import Login from '@/page/login/register';
 Vue.use(Router)
 
 const router = new Router({
-  // mode: 'history',
-  // base: __dirname,
+  mode: 'history',
+  base: __dirname,
   routes: [
     {
       path: '/',
-      name:'墙er-首页',
+      name:'home',
       component: homeMain
     },
     {
       path:'/login',
-      name:'墙er-注册页',
+      name:'login',
       component:Login
     }
   ]
