@@ -39,9 +39,6 @@
                             <el-col :span="18">
                                  <el-input v-model="ruleForm2.email"></el-input>
                             </el-col>
-                            <el-col :span="6">
-                                <el-button @click="getEmailCode" class="margin-l-10">{{getEmailMsg}}</el-button>
-                            </el-col>
                         </el-row>
                     </el-form-item>
                     <el-form-item label="验证码" prop="emailCode">
@@ -50,6 +47,7 @@
                                  <el-input v-model.number="ruleForm2.emailCode"></el-input>
                             </el-col>
                             <el-col :span="6">
+                                <el-button @click="getEmailCode" class="margin-l-10">{{getEmailMsg}}</el-button>
                             </el-col>
                         </el-row>
                     </el-form-item>

@@ -16,7 +16,6 @@ body,html{
   padding: 0;
   width: 100%;
   height: 100%;
-  min-width: 1200px;
 }
 #app {
   width: 100%;
